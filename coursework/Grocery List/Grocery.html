@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- External Style CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <title>Grocery Shopping</title>
+    <!--Internal Style-->
+    <style>
+      .container:before,
+      .container:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .container div {
+        float: left;
+        width: 180px;
+        height: 160px;
+      }
+      #box1 {
+        border-radius: 10px;
+        background-color: rgb(230, 238, 238);
+      }
+      #box2 {
+        margin-left: 30px;
+        margin-right: 30px;
+        border-radius: 10px;
+        background-color: rgb(230, 238, 238);
+      }
+      #box4 {
+        border-radius: 10px;
+        background-color: rgb(230, 238, 238);
+      }
+      #box5 {
+        margin-left: 30px;
+        margin-right: 30px;
+        border-radius: 10px;
+        background-color: rgb(230, 238, 238);
+      }
+
+      section {
+        padding: 2px;
+        border: 100px;
+        border-radius: 10px;
+        margin: 20px;
+
+        display: inline-block;
+      }
+
+      h2 {
+        background-color: blanchedalmond;
+        padding: 10px 0px 5px;
+        border-radius: 10px;
+        border: 100px;
+        margin: px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="color: rgb(10, 179, 162)">My Very Organised Grocery List</h1>
+    </header>
+    <main>
+      <h2>PANTRY ITEMS</h2>
+
+      <div class="container">
+        <div id="box1">
+          <h3>CANNED</h3>
+          <ul>
+            <li>Fruits</li>
+            <li>Pineaple</li>
+            <li>Fish Fillet</li>
+            <li>Tomato Paste</li>
+          </ul>
+        </div>
+        <div id="box2">
+          <h3>DRY GOODS</h3>
+          <ul>
+            <li>Rice</li>
+            <li>Beans</li>
+            <li>Sugar</li>
+            <li>Wheat</li>
+          </ul>
+        </div>
+        <div id="box3">
+          <img
+            src="pantry.jpg"
+            alt="Food stored in a pantry"
+            width="200"
+            height="160"
+          />
+        </div>
+      </div>
+
+      <h2>FREEZER ITEMS</h2>
+      <div class="container">
+        <div id="box4">
+          <h3>VEGGIES</h3>
+          <ul>
+            <li>Brocolli</li>
+            <li>Cabbages</li>
+            <li>Corn</li>
+            <li>Asparagus</li>
+          </ul>
+        </div>
+        <div id="box5">
+          <h3>SNACKS</h3>
+          <ul>
+            <li>Popcorn</li>
+            <li>Cookies</li>
+            <li>Pretzels</li>
+            <li>Chips</li>
+          </ul>
+        </div>
+        <div id="box6">
+          <img src="freezer.png" alt="Food stored in a freezer" width="200"
+          height="160" />
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          <b>Happy Shopping</b>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

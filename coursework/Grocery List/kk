@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+    <title>Online Grocery Shopping</title>
+
+    <!-- Internal CSS -->
+    <style>
+        section {
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="color: blue;"> <!-- Inline CSS -->
+        <h1>EasyPeasy Online Grocery</h1>
+    </header>
+
+    <!-- Fruits Section -->
+    <section>
+        <h2>Fruits</h2>
+        <ul>
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Oranges</li>
+        </ul>
+        <img src="apples.jpg" alt="Apples Image" style="padding:10px;">
+    </section>
+
+    <!-- Vegetables Section -->
+    <section>
+        <h3>Vegetables</h3>
+        <ol>
+            <li>Potatoes</li>
+            <li>Carrots</li>
+            <li>Broccoli</li>
+        </ol>
+        <img src="carrots.jpg" alt="Carrots Image" style="padding:10px;">
+    </section>
+
+    <!-- Bakery Section -->
+    <section>
+        <h2>Bakery</h2>
+        <ul>
+            <li>Bread</li>
+            <li>Cakes</li>
+            <li>Pastries</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 EasyPeasy Grocery</p>
+    </footer>
+</body>
+
+</html>
