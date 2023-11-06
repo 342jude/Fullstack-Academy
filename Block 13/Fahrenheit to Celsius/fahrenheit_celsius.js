@@ -3,15 +3,17 @@ function convertToCelsius(fahrenheit) {
 }
 
 function createMessage(input, convertedCelsius) {
+  let message = [];
   if (input < 95) {
-    return `This is ${input} °F converted to ${convertedCelsius} °C. You have hypothermia`;
+    message = " You have hypothermia";
   } else if (input > 95 && input < 100) {
-    return `This is ${input} °F converted to ${convertedCelsius} °C. You have normal temparature`;
+    message = "You have normal temparature";
   } else if (input > 100 && input < 103) {
-    return `This is ${input} °F converted to ${convertedCelsius} °C. You have a fever`;
+    message = "You have a fever";
   } else {
-    return `This is ${input} °F converted to ${convertedCelsius} °C. Call a doctor. You have high fever`;
+    message = "See a doctor. You have high fever";
   }
+  return `This is ${input} °F converted to ${convertedCelsius} °C. ${message}`;
 }
 // // function rand()
 function rand(limit) {
