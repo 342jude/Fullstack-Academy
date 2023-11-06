@@ -1,3 +1,33 @@
+let numbers = [];
+let input = prompt("Enter a number or type 'done' to exit:");
+
+while (input !== "done") {
+  numbers.push(Number(input));
+  input = prompt("Enter another number or type 'done':");
+}
+
+let sum = 0;
+let product = 1;
+let max = numbers[0];
+
+for (let i = 0; i < numbers.length; i++) {
+  sum += numbers[i];
+  product *= numbers[i];
+  if (numbers[i] > max) {
+    max = numbers[i];
+  }
+}
+
+let average = sum / numbers.length;
+
+console.log(`The sum of the numbers is ${sum}.`);
+console.log(`The average of the numbers is ${average}.`);
+console.log(`The product of the numbers is ${product}.`);
+console.log(`The maximum value of the numbers is ${max}.`);
+
+
+
+
 // // Create an empty array to store the user's input.
 // const numbers = [];
 
@@ -57,29 +87,4 @@
 
 // console.log(results);
 
-let numbers = [];
-let input = prompt("Enter a number or type 'done' to exit:");
 
-while (input !== "done") {
-  numbers.push(Number(input));
-  input = prompt("Enter another number or type 'done':");
-}
-
-let sum = 0;
-let product = 1;
-let max = numbers[0];
-
-for (let i = 0; i < numbers.length; i++) {
-  sum += numbers[i];
-  product *= numbers[i];
-  if (numbers[i] > max) {
-    max = numbers[i];
-  }
-}
-
-let average = sum / numbers.length;
-
-console.log(`The sum of the numbers is ${sum}.`);
-console.log(`The average of the numbers is ${average}.`);
-console.log(`The product of the numbers is ${product}.`);
-console.log(`The maximum value of the numbers is ${max}.`);
