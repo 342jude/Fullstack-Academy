@@ -1,0 +1,69 @@
+<H1> UNIT TESTS.Arrays </H1>
+
+<H2>Test Specifications for "multiplication" Function: </H2>
+
+Test 1: Basic Multiplication
+Input: (4, 5), Expected Output: 20
+Test 2: Negative Numbers
+Input: (-2, 4), Expected Output: -8
+Test 3: Multiply with Zero
+Input: (7, 0), Expected Output: 0
+Test 4: Fractions
+Input: (0.5, 2), Expected Output: 1.0
+Test 5: Big Numbers
+Input: (1000000, 2), Expected Output: 2000000
+Test 6: Input Validation (Non-Numeric)
+Input: ("abc", 3), Expected Output: Error (or another defined behavior)
+
+// Test Specifications for "concatOdds" Function:
+Test 1: Basic Concatenation of Odds
+Input: ([3, 2, 1], [9, 1, 1, 1, 4, 15, -1]), Expected Output: [-1, 1, 3, 9, 15]
+Test 2: Empty Arrays
+Input: ([], []), Expected Output: []
+Test 3: No Odd Numbers
+Input: ([2, 4, 6], [8, 10, 12]), Expected Output: []
+Test 4: Multiple Occurrences of the Same Odd Number
+Input: ([3, 5, 7, 3], [9, 7, 7, 1]), Expected Output: [1, 3, 5, 7, 9]
+Test 5: Negative Odd Numbers
+Input: ([-3, -5, -7], [-9, -7, -7, -1]), Expected Output: [-9, -7, -5, -3, -1]
+Test 6: Mixed Even and Odd Numbers
+Input: ([2, 4, 6], [3, 5, 7]), Expected Output: [3, 5, 7]
+Test 7: Input Validation (Non-Integer Elements)
+Input: (["a", 2, 4], [3, "b", 7]), Expected Output: Error (or another defined behavior)
+
+
+
+FUNCTIONAL TESTS.
+// Test Specifications for Shopping Cart Checkout Feature:
+Functional Tests for shopping cart checkout feature
+
+Scenario 1: Guest checkout
+
+The user adds items to their shopping cart.
+The user proceeds to checkout.
+The user is asked if they want to create an account or log in.
+The user selects "Guest checkout".
+The user is asked to enter their shipping and billing information.
+The user reviews their order and confirms their purchase.
+The user is redirected to a confirmation page.
+Scenario 2: Logged-in user checkout
+
+The user adds items to their shopping cart.
+The user proceeds to checkout.
+The user is logged in to their account.
+The user reviews their order and confirms their purchase.
+The user is redirected to a confirmation page.
+Edge cases:
+
+Empty cart: If the user's cart is empty, they should be prevented from proceeding to checkout.
+Invalid shipping or billing information: If the user enters invalid shipping or billing information, they should be prevented from completing their purchase.
+Payment failure: If the user's payment fails, they should be notified and given the option to retry their payment.
+Additional behavioral tests:
+
+Verify that the user's shopping cart is displayed correctly at each step of the checkout process.
+Verify that the user is able to edit their shopping cart items and quantities during checkout.
+Verify that the user is able to apply coupons and discounts during checkout.
+Verify that the user is able to select a shipping method during checkout.
+Verify that the user is able to select a payment method during checkout.
+Verify that the user is able to review their order and confirm their purchase before submitting their payment.
+Verify that the user is redirected to a confirmation page after completing their purchase.
